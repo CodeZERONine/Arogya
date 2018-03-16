@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Arogya</string>
+    <string name="blog">Fitness Space</string>
+    <string name="addfooditem">Food Item Entry</string>
+    <string name="caldiary">Macronutrients Diary</string>
+    <string name="settargets">Set Your Targets</string>
+    <string name="FoodEntry">Food Entry </string>
+    <string name="workoutmain">Workout Tracker </string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

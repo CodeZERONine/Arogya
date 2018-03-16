@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_book_white_24dp"
+
+            android:title="Fitness Space" />
+
+    </group>
+
+    <item android:title="Trackers">
+        <menu>
+            <item
+                android:id="@+id/nav_calories"
+                android:icon="@drawable/ic_update_white_24dp"
+                android:title="Calories Counter" />
+            <item
+                android:id="@+id/nav_workout"
+                android:icon="@drawable/ic_date_range_white_24dp"
+                android:title="Workout Tracker" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Plans">
+        <menu>
+            <item
+                android:id="@+id/nav_MBPlans"
+                android:icon="@drawable/ic_account_box_white_24dp"
+                android:title="Muscle Building" />
+            <item
+                android:id="@+id/nav_FLPlans"
+                android:icon="@drawable/ic_account_box_white_24dp"
+                android:title="Fatloss" />
+        </menu>
+    </item>
+
+</menu>

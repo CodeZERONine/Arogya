@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gusain.arogya.FoodItemEntryActivity">
+
+
+    <EditText
+        android:id="@+id/entryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/fields_round"
+        android:ems="10"
+        android:hint="Enter Food Item Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entryName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="5"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:text="Per 100g"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/entryCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/fields_round"
+        android:ems="10"
+        android:hint="Total Carbohydrates"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/entryProteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/entryCarbs"
+        android:layout_below="@+id/entryCarbs"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fields_round"
+        android:ems="10"
+        android:hint="Total Proteins"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/entryFats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/entryProteins"
+        android:layout_below="@+id/entryProteins"
+        android:background="@drawable/fields_round"
+        android:ems="10"
+        android:hint="Total Fats"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entryCarbs"
+        android:layout_alignBottom="@+id/entryCarbs"
+        android:layout_toEndOf="@+id/entryCarbs"
+        android:ems="2"
+        android:inputType="textPersonName"
+        android:text="g"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entryProteins"
+        android:layout_alignBottom="@+id/entryProteins"
+        android:layout_toEndOf="@+id/entryProteins"
+        android:ems="2"
+        android:inputType="textPersonName"
+        android:text="g"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entryFats"
+        android:layout_alignBottom="@+id/entryFats"
+        android:layout_toEndOf="@+id/entryFats"
+        android:ems="2"
+        android:inputType="textPersonName"
+        android:text="g"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/entryBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fields_round"
+        android:text="Submit Entry"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp" />
+
+</RelativeLayout>

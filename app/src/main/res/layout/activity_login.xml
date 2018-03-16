@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gusain.arogya.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@mipmap/main_icon" />
+
+    <EditText
+        android:id="@+id/LoginEmailField"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LoginBtn"
+        android:layout_below="@+id/imageView2"
+        android:layout_margin="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/login_input_outline"
+        android:ems="10"
+        android:hint="Enter Email Here"
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/LoginPasswordField"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LoginBtn"
+        android:layout_below="@+id/LoginEmailField"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/login_input_outline"
+        android:ems="10"
+        android:hint="Enter Password Here"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Sign in"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/LoginPasswordField"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_input_outline"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/LoginBtn"
+        android:layout_alignParentEnd="true">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/newacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="Need a New Account ?"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

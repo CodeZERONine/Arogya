@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gusain.arogya.WorkoutTimeActivity">
+
+    <EditText
+        android:id="@+id/cyclingtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Cycling Time"
+        android:inputType="numberSigned"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/runningtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cyclingtime"
+        android:layout_below="@+id/cyclingtime"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Running Time"
+        android:inputType="numberSigned"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/liftingtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/runningtime"
+        android:layout_below="@+id/runningtime"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Lifting Time"
+        android:inputType="numberSigned"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fields_round"
+        android:text="ADD TO DIARY"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp" />
+</RelativeLayout>

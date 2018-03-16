@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_addFood"
+        android:orderInCategory="100"
+        android:title="Enter Food Items"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_diary"
+        android:orderInCategory="200"
+        android:title="Diary"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_targets"
+        android:orderInCategory="300"
+        android:title="Targets"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add"
+        android:title="Add Post"
+        android:icon="@drawable/ic_account_box_white_24dp"
+        app:showAsAction="always"/>
+
+</menu>

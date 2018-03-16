@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gusain.arogya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".BlogMainActivity"
+            android:label="Fitness Space"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PostActivity"
+            android:label="Post"/>
+        <activity android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity"
+            android:label="Register"/>
+        <activity android:name=".LoginActivity"
+            android:label="Login In"/>
+        <activity android:name=".SetupActivity"
+            android:label="Setup Your Profile"/>
+        <activity android:name=".BlogSingleActivity" />
+        <activity
+            android:name=".CalorieMainActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Calories/Macro Counter"/>
+        <activity
+            android:name=".CalEntryActivity"
+            android:label="@string/FoodEntry" />
+        <activity
+            android:name=".FoodItemEntryActivity"
+            android:label="@string/addfooditem" />
+        <activity
+            android:name=".DiaryActivity"
+            android:label="@string/caldiary" />
+        <activity
+            android:name=".TargetsActivity"
+            android:label="@string/settargets" />
+        <activity
+            android:name=".WorkoutmainActivity"
+            android:label="@string/workoutmain"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".WorkoutTimeActivity"
+            android:label="Time Your Workouts"/>
+        <activity
+            android:name=".MBPlansActivity"
+            android:label="Muscle Building Plans"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".FlPlansActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Fat Loss Plans"/>
+        <activity android:name=".PostMBPActivity" />
+        <activity android:name=".PostFLPActivity"></activity>
+    </application>
+
+</manifest>

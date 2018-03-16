@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gusain.arogya.WorkoutmainActivity">
+
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="5"
+        android:inputType="date"
+        android:text="31/05/17"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/workoutTracker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText3"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="63dp"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        app:srcCompat="@mipmap/background" />
+
+    <ImageButton
+        android:id="@+id/workoutTracker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/workoutTracker1"
+        android:layout_below="@+id/workoutTracker1"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        app:srcCompat="@mipmap/background" />
+
+    <ImageButton
+        android:id="@+id/workoutTracker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/workoutTracker2"
+        android:layout_below="@+id/workoutTracker1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        app:srcCompat="@mipmap/background" />
+
+    <TextView
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:text="Running"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/workoutTracker1"
+        android:layout_toStartOf="@+id/editText3"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/editText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="textPersonName"
+        android:text="Cycling"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/tracker2val"
+        android:layout_alignBottom="@+id/tracker2val"
+        android:layout_alignStart="@+id/editText9" />
+
+    <TextView
+        android:id="@+id/editText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:text="Weights"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/tracker3val"
+        android:layout_alignStart="@+id/editText12" />
+
+    <TextView
+        android:id="@+id/tracker1val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:ems="2"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:text="20"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/editText9"
+        android:layout_toEndOf="@+id/workoutTracker1"
+        android:layout_marginStart="43dp" />
+
+    <TextView
+        android:id="@+id/tracker2val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="textPersonName"
+        android:text="10"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/workoutTracker2"
+        android:layout_alignStart="@+id/tracker1val"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tracker3val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="textPersonName"
+        android:text="40"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/workoutTracker3"
+        android:layout_alignStart="@+id/tracker2val"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
